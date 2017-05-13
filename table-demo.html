@@ -31,10 +31,11 @@
       td,
       th {
         padding: .5em;
+      }
 
-        &:not(:last-child) {
-          border-right: 1px solid;
-        }
+      th:not(:last-child),
+      td:not(:last-child) {
+        border-right: 1px solid;
       }
 
       tr:not(:last-child) td,
@@ -55,13 +56,12 @@
       a {
         font-weight: bold;
         color: #000;
-
-        &:hover,
-        &:focus {
-          background: #000;
-          color: #fff;
-          outline: 4px solid #000;
-        }
+      }
+      a:hover,
+      a:focus {
+        background: #000;
+        color: #fff;
+        outline: 4px solid #000;
       }
 
 
