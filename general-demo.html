@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Focus Within: General Demo</title>
+    <script>
+      // remove no-js and add 'js' to the HTML
+      document.documentElement.className = document.documentElement.className.replace('no-js','js');
+    </script>
+
+    <style>
+      /*
+        A normal (though ugly) focus
+        pseudo-class.  Any element that
+        can receive focus within the
+        .my-element parent will receive
+        a yellow background.
+      */
+      .my-element *:focus {
+        background: yellow !important;
+        color: #000;
+      }
+
+      /*
+        The :focus-within pseudo-class
+        will NOT style the elements within
+        the .my-element selector, like the
+        normal :focus above, but will
+        style the .my-element container
+        when its focusable children
+        receive focus.
+      */
+      .my-element:focus-within {
+        outline: 3px solid #333;
+      }
+
+      .my-element {
+        border: 1px solid #777;
+        max-width: 500px;
+        margin: auto;
+        background-color: #fefefe;
+        padding: 20px;
+
+        p {
+          margin: 0 0 1em;
+        }
+
+        input[type="email"] {
+          margin-top: .5em;
+          font-size: inherit;
+          border: 1px solid #555;
+          width: 100%;
+        }
+      }
+
+
+
+      body {
+        background: #ccc;
+        font-family: arial;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div class="app">
+
+
+      <div class="my-element">
+        <p>A paragraph</p>
+        <p>
+          <a href="http://scottohara.me">
+            My Website
+          </a>
+        </p>
+
+        <label for="wut_email">
+          Your email:
+        </label>
+        <input type="email" id="wut_email" />
+      </div>
+
+
+      <p style="text-align: center;">
+        <a href="http://codepen.io/scottohara/pen/VbxrKZ">View demo on codepen</a>.
+      </p>
+
+    </div>
+
+  </body>
+</html>

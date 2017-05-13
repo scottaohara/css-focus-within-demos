@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Focus Within: General Demo</title>
+    <script>
+      // remove no-js and add 'js' to the HTML
+      document.documentElement.className = document.documentElement.className.replace('no-js','js');
+    </script>
+
+    <style>
+      table {
+        width: 100%;
+        border-spacing: 0px;
+        border: 1px solid;
+      }
+
+      caption {
+        text-align: left;
+        padding-bottom: .25em;
+        font-size: 1.5em;
+      }
+
+      thead th {
+        background: #333;
+        color: #fff;
+      }
+
+      td,
+      th {
+        padding: .5em;
+
+        &:not(:last-child) {
+          border-right: 1px solid;
+        }
+      }
+
+      tr:not(:last-child) td,
+      tr:not(:last-child) th {
+        border-bottom: 1px solid;
+      }
+
+      tbody tr:first-child td {
+        border-top: 1px solid;
+      }
+
+      tbody tr:focus-within,
+      tbody tr:hover {
+        background: rgba(lightBlue, .4);
+      }
+
+
+      a {
+        font-weight: bold;
+        color: #000;
+
+        &:hover,
+        &:focus {
+          background: #000;
+          color: #fff;
+          outline: 4px solid #000;
+        }
+      }
+
+
+
+      body {
+        font-family: Arial;
+        padding: 20px 40px;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div class="app">
+
+
+      <table>
+        <caption>
+          Hover and :focus-within row highlighting
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">
+              Heading 1
+            </th>
+            <th scope="col">
+              Heading 2
+            </th>
+            <th scope="col">
+              Heading 3
+            </th>
+            <th scope="col">
+              Heading 4
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#!">Content 1 a</a>
+            </td>
+            <td>
+              Content 2 a
+            </td>
+            <td>
+              Content 3 a
+            </td>
+            <td>
+              Content 4 a
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">Content 1 b</a>
+            </td>
+            <td>
+              Content 2 b
+            </td>
+            <td>
+              Content 3 b
+            </td>
+            <td>
+              Content 4 b
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">Content 1 c</a>
+            </td>
+            <td>
+              Content 2 c
+            </td>
+            <td>
+              Content 3 c
+            </td>
+            <td>
+              Content 4 c
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <p style="text-align: center;">
+        <a href="http://codepen.io/scottohara/pen/bWMYWR">View demo on codepen</a>.
+      </p>
+
+    </div>
+
+  </body>
+</html>
