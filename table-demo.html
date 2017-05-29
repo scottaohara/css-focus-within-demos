@@ -47,7 +47,12 @@
         border-top: 1px solid;
       }
 
-      tbody tr:focus-within,
+      /* separate :focus-within and :hover so that browsers that do not
+         support :focus-within will still read the :hover styling */
+      tbody tr:focus-within {
+        background: #aee8f5;
+      }
+      
       tbody tr:hover {
         background: #aee8f5;
       }
