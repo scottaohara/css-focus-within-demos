@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Focus Within: General Demo</title>
-    <script>
-      // remove no-js and add 'js' to the HTML
-      document.documentElement.className = document.documentElement.className.replace('no-js','js');
-    </script>
-
+    <title>Focus Within: Drop Down Demo</title>
     <style>
-      /*
-        General cleanup
-      */
-
       *,
       *:before,
       *:after {
@@ -129,14 +119,11 @@
            menus.
       */
     </style>
-
-
   </head>
 
   <body>
 
     <div class="app">
-
 
       <!--
         Drop down menu example
@@ -148,9 +135,9 @@
 
       <div class="page">
 
-        <header role="banner" aria-label="Primary">
+        <header>
 
-          <nav role="navigation" aria-label="Primary" id="nav" class="nav">
+          <nav id="nav" class="nav">
 
             <ul id="nav_inner" class="nav__list">
               <li class="has-drop">
@@ -202,12 +189,13 @@
         </header>
 
         <div style="max-width: 28em; margin: 1em auto;">
-          <p>Note: this is meant to serve as a demonstration for <code>:focus-within</code> alone. This is not a recommended accessible UX pattern.</p>
+          <p>Note: this is meant to serve as a demonstration for <code>:focus-within</code> alone. 
+            This is not a recommended accessible UX pattern as this requires keyboard users to have to navigate through the contents
+            of each drop down, as they navigate through the navigation.  A toggle button to allow a user to open a 
+          listing of sub navigation links is preferred, as it will allow a user to decide when they want to enter a sub navigation
+          drop down, and otherwise be able to navigate past it with ease.</p>
         </div>
       </div>
-
     </div>
-
-
   </body>
 </html>
